@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="@Url.Content("Script/core.js")"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("Content/Site.css")"/>
+</head>
+<body>
+    <div id="search_bar">
+        <label for="search_input">Zoeken</label>
+        <div class="sit_input_txt" id="search">
+            <input type="text" id="search_input" maxlength="255" />
+        </div>
+        <a href="#" class="icon_search"></a>
+        
+        
+        <div id="search_results_container">
+            <div id="search_results_pointer" class="icon_point"></div>
+            
+            <ul>
+                <li>
+                    Contacts
+                    <ul>
+                        <li>
+                            Dhr. P.J.M. van der Meer
+                        </li>
+                        <li>
+                            Mevr. W.J.M Stoffer van der Meer
+                        </li>
+                        <li>
+                            Dhr. CCH Stoffer
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Contracten
+                    <ul>
+                        <li>
+                            CRUCELL - E-Office
+                        </li>
+                        <li>
+                            Winvision - SURFmarket
+                        </li>
+                        <li>
+                            Winvision - ZuidZorg (Eindhoven)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="toolbar">
+    </div>
+    <div id="contents">
+        @RenderBody()
+    </div>
+</body>
+</html>
